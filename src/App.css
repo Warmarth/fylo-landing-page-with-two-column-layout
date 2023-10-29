@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Very-Dark-Blue0: rgba(7 4 57 / 0.5);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.col {
+  background-color: var(--Very-Dark-Blue0);
+}
+.white{
+ background-color: var(--Light-Gray);
+}
+.col-1 {
+  background-color: var(--Very-Dark-Blue);
+}
+.col-2 li:hover {
+  color: var(--Desaturated-Blue);
+}
+.Body {
+  background: linear-gradient(hsla(240, 100%, 100%, 0.7), hsl(240, 9%, 93%)),
+    url("./images/bg-curve-mobile.svg");
+  background-repeat: no-repeat;
+  padding: 3rem 0;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (min-width: 400px) {
+  .Body {
+    background: linear-gradient(hsla(240, 100%, 100%, 0.5), hsl(240, 9%, 93%)),
+      url("./images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
   }
 }
