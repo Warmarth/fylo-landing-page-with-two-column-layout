@@ -14,7 +14,7 @@ const Header = () => {
       >
         <img src={Logo} alt="logo" className="ml-4 h-8 " />
         <nav className="">
-          <ul className="flex  gap-8 ">
+          <ul className="flex cursor-pointer gap-8 ">
             {menu.map((item, index) => {
               return <li key={index}>{item}</li>;
             })}

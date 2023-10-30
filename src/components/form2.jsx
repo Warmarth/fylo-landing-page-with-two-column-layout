@@ -1,7 +1,6 @@
-import { useState } from "react";
 import useForm from "./useForm";
 
-const Form2 = (props) => {
+const Form2 = ({ props }) => {
   const { head, page } = props;
   const { email, error, successMessage, handleChange, handleSubmit } =
     useForm();
@@ -11,7 +10,7 @@ const Form2 = (props) => {
         <h1 className="font-bold text-xl">{head}</h1>
         <p className=" mt-4 ">{page}</p>
       </div>
-      <div className="grid place-items-center">
+      <div className="grid place-items-center ">
         <form className="grid  gap-2 lg:block w-3/4">
           <input
             autoFocus
@@ -29,7 +28,7 @@ const Form2 = (props) => {
           )}
           <button
             onClick={handleSubmit}
-            className="capitalize text-sm bg-blue-700 text-white px-8 py-3 lg:block "
+            className="capitalize text-sm bg-blue-700 text-white px-8 py-2 lg:block lg:mt-1 "
           >
             get started
           </button>

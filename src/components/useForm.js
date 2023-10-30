@@ -18,7 +18,7 @@ const useForm = () => {
       setTimeout(() => {
         window.scrollTo(0, 0);
         window.location.reload();
-      }, 2000);
+      }, 1000);
     }
   };
   return {
