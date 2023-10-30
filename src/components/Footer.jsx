@@ -18,12 +18,10 @@ const Footer = () => {
        gap-4  "
         >
           <div className="flex gap-x-6">
-            {" "}
             <img src={phone} alt="phone" className="w-6" />{" "}
             <p>Phone: +1-543-123-4567 </p>
           </div>
           <div className="flex gap-x-6">
-            {" "}
             <img src={email} alt="email" className="w-6" />
             <p>example@fylo.com</p>
           </div>

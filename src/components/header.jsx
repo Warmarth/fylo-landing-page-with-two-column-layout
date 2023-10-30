@@ -16,7 +16,7 @@ const Header = () => {
         <nav className="">
           <ul className="flex  gap-8 ">
             {menu.map((item, index) => {
-             return <li key={index}>{item}</li>;
+              return <li key={index}>{item}</li>;
             })}
           </ul>
         </nav>
